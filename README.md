@@ -30,7 +30,9 @@ $ module load singularity/2.5.2
 
 ### Scheduling Jobs On The HiPerGator Using SLURM
 
-The configuration files have been modified for HiPerGator and a sample SLURM script is provided here.
+The configuration files have been modified for HiPerGator and a sample SLURM script is provided [here](ufrcSlurmTemplate).
+
+### More Updates Coming
  
  
  
