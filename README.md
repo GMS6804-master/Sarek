@@ -5,7 +5,7 @@ The original Sarek repository has been modified to run on the UF HPC/HiPerGator 
 
 First, sign up for UFRC account [here](https://www.rc.ufl.edu/access/account-request/).
 
-### Connect to UFRC Environment [(HiPerGator)](https://www.rc.ufl.edu/services/hipergator/) Using Your Gatorlink Username and Passwords.
+### Connect to UFRC Environment [(HiPerGator)](https://www.rc.ufl.edu/services/hipergator/) Using Your Gatorlink Username and Password.
 
 ```bash
 ssh username@hpg.rc.ufl.edu
