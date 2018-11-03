@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=testSarek
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=jtk622@gmail.com
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=5
-#SBATCH --mem=17gb
-#SBATCH --time=02:00:00
-#SBATCH --output=nextflow_%j.log
+#SBATCH --job-name=testSarek           # Job Name
+#SBATCH --mail-type=END,FAIL           # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=jtk622@gmail.com   # Where to send mail
+#SBATCH --ntasks=1                     # Run a single task
+#SBATCH --cpus-per-task=5              # CPUs per task
+#SBATCH --mem=17gb                     # Job memory request
+#SBATCH --time=02:00:00                # Time limit hrs:min:sec
+#SBATCH --output=nextflow_%j.log       # Standard output and error log
 pwd; hostname; date
 
 # load modules
