@@ -18,6 +18,6 @@ module load nextflow/0.32.0
 
 echo "Running nextflow script on HiPerGator"
 
-nextflow run buildReferences.nf --outDir References/smallGRCh37 --refDir Sarek-data/ref$
+nextflow run buildReferences.nf --outDir References/smallGRCh37 --refDir Sarek-data/reference  --genome smallGRCh37 --genome_base References/smallGRCh37 --tag latest -profile singularityslurm
 
 date
