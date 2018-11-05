@@ -1,0 +1,75 @@
+/ufrc/djlemas/jtkim1/Sarek-jt
+c21b-s21.ufhpc
+Fri Nov  2 22:34:25 EDT 2018
+Running nextflow script on HiPerGator
+N E X T F L O W  ~  version 0.32.0
+Launching `main.nf` [distracted_leavitt] - revision: 977130cc3e
+WARN: The config file defines settings for an unknown process: ConcatVCF
+WARN: Access to undefined parameter `sampleDir` -- Initialise it to a default value eg. `params.sampleDir = some_value`
+    ____        _____               _    
+  .' _  `.     / ____|             | |   
+ /  |\`-_ \   | (___  ___  _ __ __ | | __
+|   | \  `-|   \___ \/__ \| ´__/ _\| |/ /
+ \ |   \  /    ____) | __ | | |  __|   < 
+  `|____\'    |_____/\____|_|  \__/|_|\_\
+Sarek - Workflow For Somatic And Germline Variations ~ 2.2.1 - 977130cc3e
+Command Line: nextflow run main.nf --sample Sarek-data/testdata/tsv/tiny-manta.tsv --step mapping --genome smallGRCh37 --genome_base References/smallGRCh37 --tag latest -profile singularityslurm
+Profile     : singularityslurm
+Project Dir : /ufrc/djlemas/jtkim1/Sarek-jt
+Launch Dir  : /ufrc/djlemas/jtkim1/Sarek-jt
+Work Dir    : /ufrc/djlemas/jtkim1/Sarek-jt/work
+Cont Engine : singularity
+Out Dir     : /ufrc/djlemas/jtkim1/Sarek-jt
+TSV file    : /ufrc/djlemas/jtkim1/Sarek-jt/Sarek-data/testdata/tsv/tiny-manta.tsv
+Genome      : smallGRCh37
+Genome_base : References/smallGRCh37
+Step        : mapping
+Containers
+  Repository   : docker://jongtaek
+  Tag          : latest
+Reference files used:
+  dbsnp       :
+	/ufrc/djlemas/jtkim1/Sarek-jt/References/smallGRCh37/dbsnp_138.b37.small.vcf
+	/ufrc/djlemas/jtkim1/Sarek-jt/References/smallGRCh37/dbsnp_138.b37.small.vcf.idx
+  genome      :
+	/ufrc/djlemas/jtkim1/Sarek-jt/References/smallGRCh37/human_g1k_v37_decoy.small.fasta
+	/ufrc/djlemas/jtkim1/Sarek-jt/References/smallGRCh37/human_g1k_v37_decoy.small.dict
+	/ufrc/djlemas/jtkim1/Sarek-jt/References/smallGRCh37/human_g1k_v37_decoy.small.fasta.fai
+  bwa indexes :
+	References/smallGRCh37/human_g1k_v37_decoy.small.fasta.amb,
+	References/smallGRCh37/human_g1k_v37_decoy.small.fasta.pac,
+	References/smallGRCh37/human_g1k_v37_decoy.small.fasta.bwt,
+	References/smallGRCh37/human_g1k_v37_decoy.small.fasta.ann,
+	References/smallGRCh37/human_g1k_v37_decoy.small.fasta.sa
+  intervals   :
+	/ufrc/djlemas/jtkim1/Sarek-jt/References/smallGRCh37/small.intervals
+  knownIndels :
+	References/smallGRCh37/1000G_phase1.indels.b37.small.vcf,
+	References/smallGRCh37/Mills_and_1000G_gold_standard.indels.b37.small.vcf
+	References/smallGRCh37/Mills_and_1000G_gold_standard.indels.b37.small.vcf.idx,
+	References/smallGRCh37/1000G_phase1.indels.b37.small.vcf.idx
+[warm up] executor > slurm
+WARN: Access to undefined parameter `sequencing_center` -- Initialise it to a default value eg. `params.sequencing_center = some_value`
+[bb/9d04ed] Submitted process > MapReads (1234-1234N_M6)
+[67/04ae26] Submitted process > RunFastQC (1234-1234N_M6)
+[75/e04ce0] Submitted process > RunFastQC (1234-1234N_M2)
+[6b/eff6de] Submitted process > RunFastQC (1234-1234N_M1)
+[1d/f1d117] Submitted process > MapReads (1234-1234N_M1)
+[ef/752cea] Submitted process > RunFastQC (1234-1234N_M4)
+[75/080202] Submitted process > RunFastQC (1234-1234N_M5)
+[b8/0837fd] Submitted process > MapReads (1234-1234N_M2)
+[79/09c4e8] Submitted process > MapReads (1234-1234N_M5)
+[2e/a8f361] Submitted process > MapReads (1234-1234N_M4)
+[08/7575b6] Submitted process > MapReads (1234-1234N_M7)
+[bf/506e9d] Submitted process > RunFastQC (1234-1234N_M7)
+[8e/d4db7e] Submitted process > RunFastQC (1234-9876T_M1)
+[fa/7cce0e] Submitted process > RunFastQC (1234-9876T_M2)
+[67/7f71bc] Submitted process > MapReads (1234-9876T_M3)
+[f8/3395cf] Submitted process > MapReads (1234-9876T_M2)
+[55/a6c570] Submitted process > MapReads (1234-9876T_M5)
+[d7/e24fa6] Submitted process > RunFastQC (1234-9876T_M5)
+[ad/9a9609] Submitted process > MapReads (1234-9876T_M4)
+[24/a2cf19] Submitted process > RunFastQC (1234-9876T_M3)
+[04/787c7f] Submitted process > MapReads (1234-9876T_M1)
+[ce/29bb18] Submitted process > RunFastQC (1234-9876T_M4)
+slurmstepd: error: *** JOB 27422053 ON c21b-s21 CANCELLED AT 2018-11-03T00:34:52 DUE TO TIME LIMIT ***
