@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #SBATCH --job-name=testSarek
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=jtk622@gmail.com
@@ -18,4 +19,6 @@ echo "Running nextflow script on HiPerGator"
 
 nextflow run main.nf --sample Sarek-data/testdata/tsv/tiny-manta.tsv --step mapping --genome smallGRCh37 --genome_base References/smallGRCh37 --tag latest -profile singularityslurm
 
+
 date
+

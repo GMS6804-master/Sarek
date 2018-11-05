@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 #SBATCH --job-name=testSarek
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=jtk622@gmail.com
@@ -13,7 +13,7 @@ pwd; hostname; date
 
 # load modules
 
-module load singularity/3.0.1
+module load singularity
 module load nextflow/0.32.0
 
 echo "Running nextflow script on HiPerGator"

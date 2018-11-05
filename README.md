@@ -1,3 +1,54 @@
+## Implementing [Sarek Pipeline](https://github.com/SciLifeLab/Sarek) on the University of Florida High Performance Computing Environment 
+University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal whole-genome, whole exome, or targeted sequencing.
+
+The original Sarek repository has been modified to run on the UF HPC/HiPerGator and instructions are given below.
+
+### Create an University of Florida Research Computing Account
+
+First, sign up for UFRC account [here](https://www.rc.ufl.edu/access/account-request/).
+
+### Connect to UFRC Environment [(HiPerGator)](https://www.rc.ufl.edu/services/hipergator/) Using Your Gatorlink Username and Password.
+
+```bash
+ssh username@hpg.rc.ufl.edu
+```
+
+### Download Modified Sarek Pipeline From This Repository
+```bash
+git clone --recursive https://github.com/jongtaek-kim/Sarek UFRC-Sarek
+cd UFRC-Sarek
+```
+
+### Setup your UFRC Environment For Interactive Testing Of Sarek Pipeline and Nextflow Script
+```bash
+$ module load ufrc
+$ srundev --time=01:00:00
+$ module load nextflow/0.32.0
+$ module load singularity/2.5.2
+
+```
+
+### Scheduling Jobs On The HiPerGator Using SLURM
+
+The configuration files have been modified for HiPerGator and a sample SLURM script is provided [here](ufrcSlurmTemplate).
+
+### More Updates Coming
+ 
+ 
+ 
+
+
+
+
+
+## For More Information About Sarek Repository and Pipeline, See Below.
+
+
+
+
+
+
+
 # [![Sarek](https://raw.githubusercontent.com/SciLifeLab/Sarek/master/docs/images/Sarek_logo.png "Sarek")](http://sarek.scilifelab.se/)
 
 #### An open-source analysis pipeline to detect germline or somatic variants from whole genome or targeted sequencing
