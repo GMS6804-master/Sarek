@@ -10,8 +10,7 @@
 pwd; hostname; date
 
 # load modules
-module load ufrc
-module load singularity/2.5.2
+module load singularity
 module load nextflow/0.32.0
 
 echo "Running nextflow script on HiPerGator"
