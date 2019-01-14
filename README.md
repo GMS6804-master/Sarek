@@ -34,6 +34,9 @@ $ module load singularity/2.5.2
 
 The configuration files have been modified for HiPerGator and a sample SLURM script is provided [here](ufrcSlurmTemplate).
 
+### How To Run the Pipeline on Real NGS Data. Here, Whole Exome Sequencing Data from Illumina is Illustrated. 
+
+
 # Application of Sarek Whole Exome Bioinformatics Pipeline to Cancer Immuno-Oncology Strategy. 
 
 ![Image](https://github.com/jongtaek-kim/Sarek/blob/master/docs/images/TMB%20Defined..jpg?raw=true)
