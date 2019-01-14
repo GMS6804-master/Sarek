@@ -39,17 +39,26 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 2. Create TSV file as shown below. A sample one is in this repo. The complete instructions are here.
 3. Run the Nextflow Script as shown below. 
 
+
+
+
+&nbsp;  
+
+
+&nbsp;  
+
+
 # Application of Sarek Whole Exome Bioinformatics Pipeline to Cancer Immuno-Oncology Strategy. 
 
 ![Image](https://github.com/jongtaek-kim/Sarek/blob/master/docs/images/TMB%20Defined..jpg?raw=true)
 
-
+&nbsp;  
 # Whole Exome Sequencing is the "Gold Standard" for TMB Calculation.
 # TMB represents the amount of neoantigen that immune system has not previously been exposed to, in context of cancer and Immunotherapy.
 
 ![Image](https://github.com/jongtaek-kim/Sarek/blob/master/docs/images/TMB%20across%20tumor%20types%20nature.jpg?raw=true)
 
-
+&nbsp;  
 # TMB as a biomarker for response to Immunotherapy.
 # High TMB is associated with response to Immunotherapy such as CTLA-4 and/or PD-1 blockade.
 
@@ -61,12 +70,14 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 
 
 
-
+&nbsp;  
 
 ## For More Information About Sarek Repository and Pipeline, See Below.
 
 
+&nbsp;  
 
+&nbsp;  
 
 
 
