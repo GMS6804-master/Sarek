@@ -44,7 +44,7 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 
 
 # TMB as a biomarker for response to Immunotherapy.
-# High TMB is associated with response to to Immunotherapy such as CTLA-4 and/or PD-1 blockade.
+# High TMB is associated with response to Immunotherapy such as CTLA-4 and/or PD-1 blockade.
 
 
 ![Image](https://github.com/jongtaek-kim/Sarek/blob/master/docs/images/Immune%20Checkpoint%20Blockade.jpg?raw=true)
