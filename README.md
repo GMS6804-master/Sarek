@@ -34,11 +34,10 @@ $ module load singularity/2.5.2
 
 The configuration files have been modified for HiPerGator and a sample SLURM script is provided [here](ufrcSlurmTemplate).
 
-### How To Run the Pipeline on Real NGS Data. Here, Whole Exome Sequencing Data from Illumina is Illustrated. 
+### How To Run the Pipeline on Real NGS Data. Whole Exome Sequencing Data from Illumina NextSeq Series is Illustrated, which normally outputs a paired-end reads (Forward R1 and Reverse R2 Reads). 
 1. Download the complete reference files as shown here or simply copy them from xyz. Modify the genomes config files (already modified in this git repo).
 2. Create TSV file as shown below. A sample one is in this repo. The complete instructions are here.
 3. Run the Nextflow Script as shown below. 
-
 
 
 
