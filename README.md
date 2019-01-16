@@ -42,7 +42,9 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 
 
 2. Run the Nextflow Script as shown below. 
-
+```bash
+nextflow run main.nf --sample UF-data/UFsampledata.tsv  --step mapping --genome smallGRCh37 --genome_base References/smallGRCh37   --tag latest -profile singularity
+```
 
 
 &nbsp;  
