@@ -55,7 +55,7 @@ EATL1	XX	1	Tumor1	Lane4	UF-data/UF_Testset/Tumor1/W6172-00_S1_L004_R1_001.fastq.
 
 2. Run the Nextflow Script as shown below. 
 ```bash
-nextflow run main.nf --sample UF-data/UFsampledata.tsv  --step mapping --genome smallGRCh37 --genome_base References/smallGRCh37   --tag latest -profile singularity
+nextflow run main.nf --sample UF-data/UFsampledata.tsv  --step mapping --genome GRCh37 --genome_base References/GRCh37   --tag latest -profile singularity
 ```
 
 
