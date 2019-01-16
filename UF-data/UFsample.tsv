@@ -1,4 +1,0 @@
-EATL1	XX	0	Normal1	1	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Normal1/Normal1_lib_flowcell_Lane1_R1_1000.fastq.gz 	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Normal1/Normal1_lib_flowcell_Lane1_R2_1000.fastq.gz 
-EATL1	XX	1	Tumor1	1	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Tumor1/Tumor1_lib_flowcell_Lane1_R1_1000.fastq.gz	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Tumor1/Tumor1_lib_flowcell_Lane1_R2_1000.fastq.gz
-EATL2	XX	0	Normal2	1	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Normal1/Normal2_lib_flowcell_Lane1_R1_1000.fastq.gz	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Normal1/Normal2_lib_flowcell_Lane1_R2_1000.fastq.gz
-EATL2	XX	1	Tumor2	1	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Tumor1/Tumor2_lib_flowcell_Lane1_R1_1000.fastq.gz	/home/jtk/UFRC-Sarek/Sarek-data/testdata/UF_EATL/Tumor1/Tumor2_lib_flowcell_Lane1_R2_1000.fastq.gz
