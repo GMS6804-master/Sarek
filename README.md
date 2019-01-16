@@ -39,6 +39,16 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 
 ### Run the Pipeline on Real NGS Data. Whole Exome Sequencing Data from Illumina NextSeq Series is Illustrated, which normally outputs a paired-end reads (Forward R1 and Reverse R2 Reads). 
 1. Example TSV file for a normal/tumor pair with FASTQ files. The complete instructions are [here.](https://github.com/SciLifeLab/Sarek/blob/master/docs/INPUT.md)
+```bash
+EATL1	XX	0	Normal1	Lane1	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L001_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L001_R2_001.fastq.gz
+EATL1	XX	0	Normal1	Lane2	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L002_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L002_R2_001.fastq.gz
+EATL1	XX	0	Normal1	Lane3	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L003_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L003_R2_001.fastq.gz
+EATL1	XX	0	Normal1	Lane4	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L004_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L004_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane1	UF-data/UF_Testset/Tumor1/W6172-00_S1_L001_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L001_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane2	UF-data/UF_Testset/Tumor1/W6172-00_S1_L002_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L002_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane3	UF-data/UF_Testset/Tumor1/W6172-00_S1_L003_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L003_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane4	UF-data/UF_Testset/Tumor1/W6172-00_S1_L004_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L004_R2_001.fastq.gz
+```
 
 
 2. Run the Nextflow Script as shown below. 
