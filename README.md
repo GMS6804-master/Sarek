@@ -1,5 +1,8 @@
 ## Implementing [Sarek Pipeline](https://github.com/SciLifeLab/Sarek) on the University of Florida High Performance Computing Environment 
-<img align="center" title="CAW" src="https://github.com/jongtaek-kim/Bioinformatics-Pipeline-from-Sarek/blob/master/docs/images/Supercomputer.jpg">
+<p align="center">
+  <img width="600" height="400" src="https://github.com/jongtaek-kim/Bioinformatics-Pipeline-from-Sarek/blob/master/docs/images/Supercomputer.jpg">
+</p>
+
 
 University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal whole-genome, whole exome, or targeted sequencing.
 
