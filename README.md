@@ -6,7 +6,7 @@
 
 University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal whole-genome, whole exome, or targeted sequencing.
 
-The original Sarek repository has been modified to run on the UF HPC/HiPerGator and instructions are given below.
+The original Sarek repository has been modified and retrofitted to run on the UF HPC/HiPerGator and instructions are given below.
 
 ### Create an University of Florida Research Computing Account
 
