@@ -11,6 +11,11 @@
 #SBATCH --output=nextflow_%j.log
 pwd; hostname; date
 
+starttime=$(date)
+
+echo "Mapping Has Started at" $starttime | mail -s "UFRC HPC SLURMP" jtk622@gmail.com
+
+
 # load modules
 
 module load ufrc
@@ -23,4 +28,8 @@ nextflow run main.nf --sample UF-data/UFsampledata.tsv --step mapping --genome G
 
 
 date
+
+endtime=$(date)
+
+echo "Mapping Has Started at" $starttime "AND Mapping Has Finished at" $endtime  | mail -s "UFRC HPC SLURMP" jtk622@gmail.com
 
