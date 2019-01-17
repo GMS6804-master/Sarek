@@ -31,5 +31,5 @@ date
 
 endtime=$(date)
 
-echo "Mapping Has Started at" $starttime "AND Mapping Has Finished at" $endtime  | mail -s "UFRC HPC SLURMP" jtk622@gmail.com
+echo "Mapping Has Started at" $starttime "AND Mapping Has Finished at" $endtime  | mail -s "UFRC HPC SLURM" jtk622@gmail.com
 
