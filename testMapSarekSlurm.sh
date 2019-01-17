@@ -6,7 +6,7 @@
 #SBATCH --qos=djlemas-b
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
-#SBATCH --mem=150gb
+#SBATCH --mem=120gb
 #SBATCH --time=30:00:00
 #SBATCH --output=nextflow_%j.log
 pwd; hostname; date
