@@ -4,7 +4,7 @@
 </p>
 
 
-University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal whole-genome, whole exome, or targeted sequencing.
+University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal **whole-genome, whole exome, or targeted sequencing.**
 
 The original Sarek repository has been modified and retrofitted to run on the UF HPC/HiPerGator and instructions are given below.
 
@@ -86,7 +86,7 @@ nextflow run main.nf --sample UF-data/UFsampledata.tsv  --step mapping --genome 
 ![Image](https://github.com/jongtaek-kim/Sarek/blob/master/docs/images/Immune%20Checkpoint%20Blockade.jpg?raw=true)
  &nbsp;  
  
- ## *Supplement TMB Calculation above with Microsatellite Instability Analysis [here](https://github.com/jongtaek-kim/Microsatellite-Instability_with_MSIsensor) and Mutational Signature Analysis [here.](https://github.com/jongtaek-kim/Mutational_Signatures_in_Cancer_with_MuSiCa)
+ ## *Supplement Above TMB Calculation with Microsatellite Instability Analysis [here](https://github.com/jongtaek-kim/Microsatellite-Instability_with_MSIsensor) and Mutational Signature Analysis [here.](https://github.com/jongtaek-kim/Mutational_Signatures_in_Cancer_with_MuSiCa)
 
 
 
