@@ -1,9 +1,12 @@
 ## Implementing [Sarek Pipeline](https://github.com/SciLifeLab/Sarek) on the University of Florida High Performance Computing Environment 
-<img align="center" title="CAW" src="https://github.com/jongtaek-kim/Bioinformatics-Pipeline-from-Sarek/blob/master/docs/images/Supercomputer.jpg">
+<p align="center">
+  <img width="600" height="400" src="https://github.com/jongtaek-kim/Bioinformatics-Pipeline-from-Sarek/blob/master/docs/images/Supercomputer.jpg">
+</p>
 
-University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal whole-genome, whole exome, or targeted sequencing.
 
-The original Sarek repository has been modified to run on the UF HPC/HiPerGator and instructions are given below.
+University of Florida High Performance Computing Implementation of Sarek's Pipeline to detect germline or somatic variants from normal or tumour/normal **whole-genome, whole exome, or targeted sequencing.**
+
+The original Sarek repository has been modified and retrofitted to run on the UF HPC/HiPerGator and instructions are given below.
 
 ### Create an University of Florida Research Computing Account
 
@@ -37,12 +40,26 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 
 ### Download the complete GRCh37 Reference files as shown [here](https://github.com/SciLifeLab/Sarek/blob/master/docs/REFERENCES.md) or simply copy them from /ufrc/djlemas/jtkim1/UFRC-Sarek/References/GRCh37 if you are inside HiPerGator. Modify the genomes config files (already modified in this git repo).
 
-### Run the Pipeline on Real NGS Data. Whole Exome Sequencing Data from Illumina NextSeq Series is Illustrated, which normally outputs a paired-end reads (Forward R1 and Reverse R2 Reads). 
-1. Example TSV file for a normal/tumor pair with FASTQ files. The complete instructions are [here.](https://github.com/SciLifeLab/Sarek/blob/master/docs/INPUT.md)
+### Make a folder for your NGS data. We placed all our FASTQ files in the "UF-data/UF_Testset" folder.
+
+### Run the Pipeline on Real NGS Data. Whole Exome Sequencing Data from Illumina NextSeq Series is Illustrated, which normally outputs a paired-end reads (Forward R1 and Reverse R2 Reads from each lane). 
+1. Example TSV file [(UFsampledata.tsv)](https://github.com/jongtaek-kim/Bioinformatics-Pipeline-from-Sarek/blob/master/UF-data/UFsampledata.tsv) for a normal/tumor pair with FASTQ files shown below. The complete descriptions are [here.](https://github.com/SciLifeLab/Sarek/blob/master/docs/INPUT.md)
+```bash
+EATL1	XX	0	Normal1	Lane1	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L001_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L001_R2_001.fastq.gz
+EATL1	XX	0	Normal1	Lane2	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L002_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L002_R2_001.fastq.gz
+EATL1	XX	0	Normal1	Lane3	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L003_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L003_R2_001.fastq.gz
+EATL1	XX	0	Normal1	Lane4	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L004_R1_001.fastq.gz	UF-data/UF_Testset/Normal1/NS-17-11-BC05-72_S4_L004_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane1	UF-data/UF_Testset/Tumor1/W6172-00_S1_L001_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L001_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane2	UF-data/UF_Testset/Tumor1/W6172-00_S1_L002_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L002_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane3	UF-data/UF_Testset/Tumor1/W6172-00_S1_L003_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L003_R2_001.fastq.gz
+EATL1	XX	1	Tumor1	Lane4	UF-data/UF_Testset/Tumor1/W6172-00_S1_L004_R1_001.fastq.gz	UF-data/UF_Testset/Tumor1/W6172-00_S1_L004_R2_001.fastq.gz
+```
 
 
 2. Run the Nextflow Script as shown below. 
-
+```bash
+nextflow run main.nf --sample UF-data/UFsampledata.tsv  --step mapping --genome GRCh37 --genome_base References/GRCh37   --tag latest -profile singularity
+```
 
 
 &nbsp;  
@@ -67,9 +84,9 @@ The configuration files have been modified for HiPerGator and a sample SLURM scr
 
 
 ![Image](https://github.com/jongtaek-kim/Sarek/blob/master/docs/images/Immune%20Checkpoint%20Blockade.jpg?raw=true)
+ &nbsp;  
  
- 
- 
+ ## *Supplement Above TMB Calculation with Microsatellite Instability Analysis [here](https://github.com/jongtaek-kim/Microsatellite-Instability_with_MSIsensor) and Mutational Signature Analysis [here.](https://github.com/jongtaek-kim/Mutational_Signatures_in_Cancer_with_MuSiCa)
 
 
 
