@@ -14,9 +14,9 @@ EATL2	XX	1	Tumor2	Lane1	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L001_R1_00
 EATL2	XX	1	Tumor2	Lane2	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L002_R1_001.fastq.gz	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L002_R2_001.fastq.gz
 EATL2	XX	1	Tumor2	Lane3	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L003_R1_001.fastq.gz	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L003_R2_001.fastq.gz
 EATL2	XX	1	Tumor2	Lane4	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L004_R1_001.fastq.gz	UF-data/UF_Testset/Tumor2/NS-17-25-BC21-87_S4_L004_R2_001.fastq.gz
-EATL3	XY	0	Normal3	Lane1	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L001_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L001_R1_001.fastq.gz
-EATL3	XY	0	Normal3	Lane2	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L002_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L002_R1_001.fastq.gz
-EATL3	XY	0	Normal3	Lane3	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L003_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L003_R1_001.fastq.gz
+EATL3	XY	0	Normal3	Lane1	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L001_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L001_R2_001.fastq.gz
+EATL3	XY	0	Normal3	Lane2	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L002_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L002_R2_001.fastq.gz
+EATL3	XY	0	Normal3	Lane3	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L003_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L003_R2_001.fastq.gz
 EATL3	XY	0	Normal3	Lane4	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L004_R1_001.fastq.gz	UF-data/UF_Testset/Normal3/NS-17-11-BC12-69_S10_L004_R2_001.fastq.gz
 EATL3	XY	1	Tumor3	Lane1	UF-data/UF_Testset/Tumor3/H5469-95-BC14-2_S1_L001_R1_001.fastq.gz	UF-data/UF_Testset/Tumor3/H5469-95-BC14-2_S1_L001_R2_001.fastq.gz
 EATL3	XY	1	Tumor3	Lane2	UF-data/UF_Testset/Tumor3/H5469-95-BC14-2_S1_L002_R1_001.fastq.gz	UF-data/UF_Testset/Tumor3/H5469-95-BC14-2_S1_L002_R2_001.fastq.gz
