@@ -19,7 +19,7 @@ module load nextflow/0.32.0
 
 echo "Running nextflow script on HiPerGator"
 
-nextflow run main.nf --sample UF-data/UFsampledata --step mapping --genome GRCh37 --genome_base References/GRCh37 --tag latest -profile singularityslurm
+nextflow run main.nf --sample UF-data/UFsampledata.tsv --step mapping --genome GRCh37 --genome_base References/GRCh37 --tag latest -profile singularityslurm
 
 
 date
